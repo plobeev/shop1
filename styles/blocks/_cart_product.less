@@ -122,6 +122,7 @@
 .products_cart_link:hover {
     background-color: #F16D7F;
     color: #FFFFFF;
+    transition-duration: 0.4s;
     .product_cart_icon{
         fill: #FFFFFF;
     }
@@ -211,7 +212,7 @@
     background-color: transparent;
     border-style: none;
     right: 17px;
-    top: 28px;
+    top: 28px;    
     cursor: pointer;
     .close_icon{
         fill: #575757;
@@ -248,6 +249,11 @@ input[type=number] {
     background-color: transparent;
     border: 1px #A4A4A4 solid;
     margin-top: 32px;
+    &:hover{
+        color: #ffffff;
+        background-color:#F26376 ;
+        transition-duration: 0.4s;
+    }
 }
 
 .cart_shopping_button1{width: 235px;}
@@ -348,4 +354,10 @@ input[type=number] {
     text-transform: uppercase;
     border-style: none;
     cursor: pointer;
+    &:hover{
+        color: #F26376;
+        background-color:#F5F3F3 ;
+        transition-duration: 0.4s;
+        outline: 1px solid #F26376;
+    }
 } 
