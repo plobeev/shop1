@@ -1,5 +1,8 @@
+@footer_height:79px;
+
 .features_wrapper{
     background-color: #222224;
+    min-height: 341px;
 }
 .features_section{    
     display: flex;
@@ -7,8 +10,9 @@
     justify-content: space-between;
     text-align: center;
     padding: 104px 0 ;
+    
 .feature{
-    max-height:134px;
+    height:134px;
     max-width:360px;
     font-family: Lato;
     font-weight: 300;
@@ -135,7 +139,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 79px;
+        min-height: @footer_height;
         flex-wrap: wrap;
         padding-left: 5px;
         word-spacing: 1px;

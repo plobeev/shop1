@@ -32,14 +32,72 @@
                 </div>
 
                 <div class="header_right">
-                    <button class="menu_navigation"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="23"
-                            viewBox="0 0 32 23">
-                            <g>
+                    <nav>
+
+                        <button class="menu_navigation_btn"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="23" viewBox="0 0 32 23">
                                 <g>
-                                    <path d="M0 23v-2.69h32V23zm0-10.24v-2.69h32v2.69zM0 2.69V0h32v2.69z" />
+                                    <g>
+                                        <path d="M0 23v-2.69h32V23zm0-10.24v-2.69h32v2.69zM0 2.69V0h32v2.69z" />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg></button>
+                            </svg></button>
+
+                        <div class="menu_overlay">
+                            <div class="menu">
+                                <h2 class="menu_title">menu</h2>
+                                <ul class="menu_list">
+                                    <li>
+                                        <ul class="menu_category">
+                                            <li><a href="#" class="menu_category_title">men</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">denim</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="menu_category">
+                                            <li><a href="#" class="menu_category_title">women</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="menu_category">
+                                            <li><a href="#" class="menu_category_title">kids</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <button class="menu_close_btn">X</button>
+
+                            </div>
+                        </div>
+
+                        <script>
+                            document.querySelector(".menu_navigation_btn").onclick = function () {
+                                document.querySelector(".menu_overlay").classList.add("menu_overlay_open");
+                            }
+
+                            document.querySelector(".menu_close_btn").onclick = function () {
+                                document.querySelector(".menu_overlay").classList.remove("menu_overlay_open");
+                            }
+                        </script>
+                    </nav>
 
                     <a class="profile_icon" href="registration.html"><svg xmlns="http://www.w3.org/2000/svg" width="29"
                             height="29" viewBox="0 0 29 29">
@@ -189,77 +247,82 @@
 
 
 
-            <section class="items wrap ">
+            <section class="items wrap">
 
                 <h2 class="hidden">Other Products</h2>
 
-                <div class="item"><img src="img/item4.jpg" alt="item № 1">
-                    <div class="item_description">
-                        <div class="overlay">
-                            <button class="add_to_cart_btn"><svg class="product_cart_icon"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
-                                        </g>
-                                    </g>
-                                </svg>Add to cart</button>
-                        </div>
+                <div class="items_container">
 
-                        <a class="item_page_link" href="product.html">
-                            <h3 class="item_name">ELLERY X M'O CAPSULE</h3>
-                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <span class="item_price">$52.00</span>
-                        </a>
+                    <div class="item"><img src="img/item4.jpg" alt="item № 1">
+                        <div class="item_description">
+                            <div class="overlay">
+                                <button class="add_to_cart_btn"><svg class="product_cart_icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
+                                            </g>
+                                        </g>
+                                    </svg>Add to cart</button>
+                            </div>
+
+                            <a class="item_page_link" href="product.html">
+                                <h3 class="item_name">ELLERY X M'O CAPSULE</h3>
+                                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                                    Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <span class="item_price">$52.00</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item"><img src="img/item3.jpg" alt="item № 2 ">
+                        <div class="item_description">
+                            <div class="overlay">
+                                <button class="add_to_cart_btn"><svg class="product_cart_icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
+                                            </g>
+                                        </g>
+                                    </svg>Add to cart</button>
+                            </div>
+                            <a class="item_page_link" href="product.html">
+                                <h3 class="item_name">ELLERY X M'O CAPSULE</h3>
+                                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                                    Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <span class="item_price">$52.00</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item"><img src="img/item6.jpg" alt="item № 3">
+                        <div class="item_description">
+                            <div class="overlay">
+                                <button class="add_to_cart_btn"><svg class="product_cart_icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
+                                            </g>
+                                        </g>
+                                    </svg>Add to cart</button>
+                            </div>
+                            <a class="item_page_link" href="product.html">
+                                <h3 class="item_name">ELLERY X M'O CAPSULE</h3>
+                                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                                    Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <span class="item_price">$52.00</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="item"><img src="img/item3.jpg" alt="item № 2 ">
-                    <div class="item_description">
-                        <div class="overlay">
-                            <button class="add_to_cart_btn"><svg class="product_cart_icon"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
-                                        </g>
-                                    </g>
-                                </svg>Add to cart</button>
-                        </div>
-                        <a class="item_page_link" href="product.html">
-                            <h3 class="item_name">ELLERY X M'O CAPSULE</h3>
-                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <span class="item_price">$52.00</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="item"><img src="img/item6.jpg" alt="item № 3">
-                    <div class="item_description">
-                        <div class="overlay">
-                            <button class="add_to_cart_btn"><svg class="product_cart_icon"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
-                                        </g>
-                                    </g>
-                                </svg>Add to cart</button>
-                        </div>
-                        <a class="item_page_link" href="product.html">
-                            <h3 class="item_name">ELLERY X M'O CAPSULE</h3>
-                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <span class="item_price">$52.00</span>
-                        </a>
-                    </div>
-                </div>
-
 
             </section>
 

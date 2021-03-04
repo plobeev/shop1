@@ -32,14 +32,71 @@
                 </div>
 
                 <div class="header_right">
-                    <button class="menu_navigation"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="23"
-                            viewBox="0 0 32 23">
-                            <g>
+                    <nav>
+
+                        <button class="menu_navigation_btn"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="23" viewBox="0 0 32 23">
                                 <g>
-                                    <path d="M0 23v-2.69h32V23zm0-10.24v-2.69h32v2.69zM0 2.69V0h32v2.69z" />
+                                    <g>
+                                        <path d="M0 23v-2.69h32V23zm0-10.24v-2.69h32v2.69zM0 2.69V0h32v2.69z" />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg></button>
+                            </svg></button>
+
+                        <div class="menu_overlay">
+                            <div class="menu">
+                                <h2 class="menu_title">menu</h2>
+                                <ul class="menu_list">
+                                    <li>
+                                        <ul class="menu_category">
+                                            <li><a href="#" class="menu_category_title">men</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">denim</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="menu_category">
+                                            <li><a href="#" class="menu_category_title">women</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="menu_category">
+                                            <li><a href="#" class="menu_category_title">kids</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a>
+                                            </li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
+                                            <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <button class="menu_close_btn">X</button>
+
+                            </div>
+                        </div>
+                        <script>
+                            document.querySelector(".menu_navigation_btn").onclick = function () {
+                                document.querySelector(".menu_overlay").classList.add("menu_overlay_open");
+                            }
+
+                            document.querySelector(".menu_close_btn").onclick = function () {
+                                document.querySelector(".menu_overlay").classList.remove("menu_overlay_open");
+                            }
+                        </script>
+                    </nav>
 
                     <a class="profile_icon" href="registration.html"><svg xmlns="http://www.w3.org/2000/svg" width="29"
                             height="29" viewBox="0 0 29 29">
