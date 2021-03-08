@@ -21,7 +21,6 @@
 .promo_text {
     max-width: 405px;
     border-left: solid #f16d7f 12px;
-    font-family: Lato;
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
@@ -62,17 +61,20 @@
     .offer_first_row {
         width: 31.5%;
         height: 260px;
-        padding-top: 105px;
         background-color: #564c49;
     }
     .offer_second_row {
         width: 100%;
         height: 180px;
-        padding-top: 65px;
         background-color: #564c49;
     }
 }
 .offer_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 16px;
@@ -93,3 +95,86 @@
 
 
 
+// TABLET
+@media (max-width:1180px){
+    .promo{
+        height: 368px;
+        & .promo_title{
+            margin-bottom: 0;
+        }
+        & .wrap_promo{
+            background-size: 184px 368px;
+            background-position: 14.5%;
+            & .promo_text{
+                font-size: 24px;
+                line-height: 29px;
+                & .promo_text_firstword {
+                    font-size: 44px;
+                    line-height: 53px;
+                }
+                & .promo_text_lastword {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+    .offers{
+        & .offer_first_row{
+            height: 168px;
+            background-size: cover;
+        }
+        & .offer_second_row{
+            height: 116px;
+        }
+        .offer_text{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// MOBILE
+
+@media (max-width:805px){
+    .promo{
+        justify-content: center;
+            & .promo_title{
+                margin-bottom: 0;
+            }
+            & .wrap_promo{
+                background-size: 0 0;
+                & .promo_text{  
+                    font-size: 20px;
+                    line-height: 24px;
+                    & .promo_text_firstword {
+                        font-size: 38px;
+                        line-height: 46px;
+                    }
+                    & .promo_text_lastword {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+        } 
+    }
+    .promo .promo_title{
+        padding-left: 0px;
+    }
+    .wrap_promo{
+        justify-content: center;
+        background: none;
+    }
+    .offers{
+        flex-direction: column;
+        & .offer_text{
+            width: 100%;
+        margin-bottom: 32px;
+        }
+        & .offer_first_row{
+            height: 249px;
+        }
+        & .offer_second_row{
+            height: 111px;
+        }
+    }
+}

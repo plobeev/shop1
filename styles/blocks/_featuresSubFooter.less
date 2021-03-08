@@ -89,7 +89,7 @@ width: 557px;
 } 
 
 .email_form{
-    width: 356px;
+    max-width: 356px;
     text-align: center;
     margin: 0 auto;
 }  
@@ -98,7 +98,7 @@ width: 557px;
     height: 49px;         
 }
 .input_email {
-    width: 256px;
+    max-width: 256px;
     padding: 23px;
     font-size: 14px;
     line-height: 17px;  
@@ -168,4 +168,55 @@ justify-content: space-between;
     background-color: #F16D7F;
     color: #FFFFFF;
     transition-duration: 0.4s;
+}
+
+
+// TABLET
+
+@media (max-width:1180px){
+    footer .footer_wrapper{
+        padding: 0 33px;
+    }
+    .subscription_section .subscription_wrapper{
+        flex-direction: column;
+        justify-content: center;
+        height: 614px;
+        padding: 64px 0 140px 0;
+    }
+    .features_section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 64px 0;
+        & .feature{
+            margin-top: 48px;
+        }
+    }
+
+}
+
+// MOBILE
+
+@media (max-width:805px){
+    footer .footer_wrapper{
+        min-height:143px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 40px;
+    }
+    .subscription_section .subscription_wrapper{
+        flex-direction: row;
+        height: 550px;
+        padding: 64px 0 110px 0;
+    }
+    .features_section{
+        padding: 0 0 64px 0;
+    }
+    .subscription_info{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .subscription_text_second_line{      
+        font-size: 14px;
+    }
 }
