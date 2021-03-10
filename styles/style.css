@@ -244,6 +244,7 @@ header .wrap_header {
 }
 .item_page_link {
   text-decoration: none;
+  color: #222222;
 }
 .item_page_link:visited {
   color: #222222;
@@ -314,7 +315,7 @@ header .wrap_header {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-  padding: 104px 0 ;
+  padding: 104px 0;
 }
 .features_section .feature {
   height: 134px;
@@ -418,7 +419,7 @@ header .wrap_header {
 }
 .input_submit_btn {
   width: 100px;
-  text-align: center ;
+  text-align: center;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -447,9 +448,9 @@ footer .footer_wrapper {
   word-spacing: 1px;
 }
 .social {
-  width: 148px;
   height: 32px;
   display: flex;
+  gap: 6.66666px;
   justify-content: space-between;
 }
 .social a {
@@ -511,6 +512,7 @@ footer .footer_wrapper {
   }
   .subscription_text_second_line {
     font-size: 14px;
+    line-height: 17px;
   }
 }
 .product_slider {
@@ -714,6 +716,24 @@ footer .footer_wrapper {
 }
 .btn_cart_delete_item .close_icon {
   fill: #575757;
+}
+.btn_cart_delete_item .close_icon:hover {
+  transform: scale(1.6);
+  transition-duration: 0.5s;
+}
+.btn_cart_delete_item:hover {
+  animation: rotation 2s infinite linear;
+}
+.btn_cart_delete_item:focus {
+  outline: none;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1276,6 +1296,7 @@ input[type=number] {
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
+  max-width: 90%;
 }
 @media (max-width: 1180px) {
   .promo {
@@ -1441,6 +1462,7 @@ summary {
 }
 .filter_list_item a {
   text-decoration: none;
+  color: #6F6E6E;
 }
 .filter_list_item a:visited {
   font-weight: normal;
@@ -1471,6 +1493,7 @@ summary {
   background-color: #FFFFFF;
   width: 232px;
   padding: 37px 33px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   margin-bottom: 4px;
 }
 .menu a {
@@ -1508,6 +1531,9 @@ summary {
   color: #6F6E6E;
   text-transform: capitalize;
   margin-top: 11px;
+}
+.menu_list_item a {
+  color: #6F6E6E;
 }
 .menu_list_item a:visited {
   color: #6F6E6E;
