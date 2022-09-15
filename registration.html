@@ -1,278 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link href="img/favicon.png" rel="icon" type="image/png" />
+        <script src="https://kit.fontawesome.com/84badc70fa.js" crossorigin="anonymous"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="img/favicon.png" rel="icon" type="image/png">
-    <script src="https://kit.fontawesome.com/b3c72de47b.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-    <div class="page_container">
-        <header>
-            <div class="wrap wrap_header">
-                <div class="header_left">
-                    <a class="logo" href="index.html"><img src="img/logo.png" alt="The Brand"></a>
-                    <a class="search_icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="27"
-                            viewBox="0 0 26 27">
-                            <g>
-                                <g>
-                                    <path
-                                        d="M25.73 25.371a.97.97 0 0 1-.3 1.557.9.9 0 0 1-.718-.002.93.93 0 0 1-.301-.209l-7.748-7.807a10.318 10.318 0 0 1-6.24 2.09 10.395 10.395 0 1 1 7.639-3.375zM4.378 16.565a8.575 8.575 0 0 0 6.046 2.535 8.535 8.535 0 1 0-8.534-8.6 8.575 8.575 0 0 0 2.488 6.065z" />
-                                </g>
-                            </g>
-                        </svg></a>
-                </div>
-
-                <div class="header_right">
-                    <nav>
-
-                        <button class="menu_navigation_btn"><svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                height="23" viewBox="0 0 32 23">
+    <body>
+        <div class="page_container">
+            <header>
+                <div class="wrap wrap_header">
+                    <div class="header_left">
+                        <a class="logo" href="index.html"><img src="img/logo.png" alt="The Brand" /></a>
+                        <a class="search_icon" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27">
                                 <g>
                                     <g>
-                                        <path d="M0 23v-2.69h32V23zm0-10.24v-2.69h32v2.69zM0 2.69V0h32v2.69z" />
+                                        <path
+                                            d="M25.73 25.371a.97.97 0 0 1-.3 1.557.9.9 0 0 1-.718-.002.93.93 0 0 1-.301-.209l-7.748-7.807a10.318 10.318 0 0 1-6.24 2.09 10.395 10.395 0 1 1 7.639-3.375zM4.378 16.565a8.575 8.575 0 0 0 6.046 2.535 8.535 8.535 0 1 0-8.534-8.6 8.575 8.575 0 0 0 2.488 6.065z" />
                                     </g>
                                 </g>
-                            </svg></button>
+                            </svg>
+                        </a>
+                    </div>
 
-                        <div class="menu_overlay">
-                            <div class="menu">
-                                <h2 class="menu_title">menu</h2>
-                                <div class="cart_profile_links_mobile">
-                                    <a class="profile_icon_mobile" href="registration.html"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="29" height="29"
-                                            viewBox="0 0 29 29">
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        d="M6.344 9.974A11.159 11.159 0 0 1 8.666 3 7.451 7.451 0 0 1 14.5 0c4.5 0 8.156 4.472 8.156 9.968 0 5.496-3.656 9.969-8.156 9.969s-8.156-4.472-8.156-9.963zm1.811-.005c.001 4.496 2.847 8.156 6.345 8.156 3.498 0 6.344-3.659 6.344-8.156 0-4.497-2.844-8.156-6.344-8.156-3.5 0-6.346 3.66-6.345 8.156zm18.453 10.548A8.166 8.166 0 0 1 29 26.28 2.722 2.722 0 0 1 26.282 29H2.719A2.722 2.722 0 0 1 0 26.281a8.165 8.165 0 0 1 8.158-8.155.906.906 0 0 1 0 1.812 6.352 6.352 0 0 0-6.344 6.344.908.908 0 0 0 .906.906h23.562a.908.908 0 0 0 .906-.906 6.351 6.351 0 0 0-6.344-6.344.907.907 0 0 1 0-1.813 8.166 8.166 0 0 1 5.764 2.392z" />
-                                                </g>
-                                            </g>
-                                        </svg><span>profale page</span> </a>
-                                    <a class="purchase_mobile" href="cart.html"><svg class="cart_icon"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
-                                                </g>
-                                            </g>
-                                        </svg><span>cart page</span>
-                                    </a>
-                                </div>
-                                <ul class="menu_list">
-                                    <li>
-                                        <ul class="menu_category">
-                                            <li><a href="#" class="menu_category_title">man</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
-                                            </li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">denim</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="menu_category">
-                                            <li><a href="#" class="menu_category_title">woman</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
-                                            </li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a>
-                                            </li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="menu_category">
-                                            <li><a href="#" class="menu_category_title">kids</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">accessories</a>
-                                            </li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a>
-                                            </li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
-                                            <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <button class="menu_close_btn"><svg class="close_icon"
-                                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <div class="header_right">
+                        <nav>
+                            <button class="menu_navigation_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="23" viewBox="0 0 32 23">
+                                    <g>
                                         <g>
-                                            <g>
-                                                <path
-                                                    d="M11.245 9l6.285-6.285a1.59 1.59 0 0 0-2.245-2.25L9 6.752 2.715.466a1.59 1.59 0 1 0-2.25 2.25L6.752 9 .466 15.285a1.59 1.59 0 0 0 2.25 2.25L9 11.248l6.285 6.285a1.591 1.591 0 0 0 2.25-2.25z" />
-                                            </g>
+                                            <path d="M0 23v-2.69h32V23zm0-10.24v-2.69h32v2.69zM0 2.69V0h32v2.69z" />
                                         </g>
-                                    </svg></button>
+                                    </g>
+                                </svg>
+                            </button>
+
+                            <div class="menu_overlay">
+                                <div class="menu">
+                                    <h2 class="menu_title">menu</h2>
+                                    <div class="cart_profile_links_mobile">
+                                        <a class="profile_icon_mobile" href="registration.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M6.344 9.974A11.159 11.159 0 0 1 8.666 3 7.451 7.451 0 0 1 14.5 0c4.5 0 8.156 4.472 8.156 9.968 0 5.496-3.656 9.969-8.156 9.969s-8.156-4.472-8.156-9.963zm1.811-.005c.001 4.496 2.847 8.156 6.345 8.156 3.498 0 6.344-3.659 6.344-8.156 0-4.497-2.844-8.156-6.344-8.156-3.5 0-6.346 3.66-6.345 8.156zm18.453 10.548A8.166 8.166 0 0 1 29 26.28 2.722 2.722 0 0 1 26.282 29H2.719A2.722 2.722 0 0 1 0 26.281a8.165 8.165 0 0 1 8.158-8.155.906.906 0 0 1 0 1.812 6.352 6.352 0 0 0-6.344 6.344.908.908 0 0 0 .906.906h23.562a.908.908 0 0 0 .906-.906 6.351 6.351 0 0 0-6.344-6.344.907.907 0 0 1 0-1.813 8.166 8.166 0 0 1 5.764 2.392z" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span>profale page</span>
+                                        </a>
+                                        <a class="purchase_mobile" href="cart.html">
+                                            <svg class="cart_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span>cart page</span>
+                                        </a>
+                                    </div>
+                                    <ul class="menu_list">
+                                        <li>
+                                            <ul class="menu_category">
+                                                <li><a href="#" class="menu_category_title">man</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">accessories</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">denim</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul class="menu_category">
+                                                <li><a href="#" class="menu_category_title">woman</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">accessories</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul class="menu_category">
+                                                <li><a href="#" class="menu_category_title">kids</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">accessories</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">jackets & coats</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">polos</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">t-shirts</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">shirts</a></li>
+                                                <li class="menu_list_item"><a href="#" class="menu_link">bags</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <button class="menu_close_btn">
+                                        <svg class="close_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="M11.245 9l6.285-6.285a1.59 1.59 0 0 0-2.245-2.25L9 6.752 2.715.466a1.59 1.59 0 1 0-2.25 2.25L6.752 9 .466 15.285a1.59 1.59 0 0 0 2.25 2.25L9 11.248l6.285 6.285a1.591 1.591 0 0 0 2.25-2.25z" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
 
-                        </div>
+                            <script>
+                                document.querySelector(".menu_navigation_btn").onclick = function () {
+                                    document.querySelector(".menu_overlay").classList.add("menu_overlay_open");
+                                };
 
-                        <script>
-                            document.querySelector(".menu_navigation_btn").onclick = function () {
-                                document.querySelector(".menu_overlay").classList.add("menu_overlay_open");
-                            }
+                                document.querySelector(".menu_close_btn").onclick = function () {
+                                    document.querySelector(".menu_overlay").classList.remove("menu_overlay_open");
+                                };
+                            </script>
+                        </nav>
 
-                            document.querySelector(".menu_close_btn").onclick = function () {
-                                document.querySelector(".menu_overlay").classList.remove("menu_overlay_open");
-                            }
-                        </script>
-                    </nav>
-
-                    <a class="profile_icon" href="registration.html"><svg xmlns="http://www.w3.org/2000/svg" width="29"
-                            height="29" viewBox="0 0 29 29">
-                            <g>
+                        <a class="profile_icon" href="registration.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
                                 <g>
-                                    <path
-                                        d="M6.344 9.974A11.159 11.159 0 0 1 8.666 3 7.451 7.451 0 0 1 14.5 0c4.5 0 8.156 4.472 8.156 9.968 0 5.496-3.656 9.969-8.156 9.969s-8.156-4.472-8.156-9.963zm1.811-.005c.001 4.496 2.847 8.156 6.345 8.156 3.498 0 6.344-3.659 6.344-8.156 0-4.497-2.844-8.156-6.344-8.156-3.5 0-6.346 3.66-6.345 8.156zm18.453 10.548A8.166 8.166 0 0 1 29 26.28 2.722 2.722 0 0 1 26.282 29H2.719A2.722 2.722 0 0 1 0 26.281a8.165 8.165 0 0 1 8.158-8.155.906.906 0 0 1 0 1.812 6.352 6.352 0 0 0-6.344 6.344.908.908 0 0 0 .906.906h23.562a.908.908 0 0 0 .906-.906 6.351 6.351 0 0 0-6.344-6.344.907.907 0 0 1 0-1.813 8.166 8.166 0 0 1 5.764 2.392z" />
+                                    <g>
+                                        <path
+                                            d="M6.344 9.974A11.159 11.159 0 0 1 8.666 3 7.451 7.451 0 0 1 14.5 0c4.5 0 8.156 4.472 8.156 9.968 0 5.496-3.656 9.969-8.156 9.969s-8.156-4.472-8.156-9.963zm1.811-.005c.001 4.496 2.847 8.156 6.345 8.156 3.498 0 6.344-3.659 6.344-8.156 0-4.497-2.844-8.156-6.344-8.156-3.5 0-6.346 3.66-6.345 8.156zm18.453 10.548A8.166 8.166 0 0 1 29 26.28 2.722 2.722 0 0 1 26.282 29H2.719A2.722 2.722 0 0 1 0 26.281a8.165 8.165 0 0 1 8.158-8.155.906.906 0 0 1 0 1.812 6.352 6.352 0 0 0-6.344 6.344.908.908 0 0 0 .906.906h23.562a.908.908 0 0 0 .906-.906 6.351 6.351 0 0 0-6.344-6.344.907.907 0 0 1 0-1.813 8.166 8.166 0 0 1 5.764 2.392z" />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg></a>
-                    <a class="purchase" href="cart.html"><svg class="cart_icon" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 32 29">
-                            <g>
+                            </svg>
+                        </a>
+                        <a class="purchase" href="cart.html">
+                            <svg class="cart_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29">
                                 <g>
-                                    <path
-                                        d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
+                                    <g>
+                                        <path
+                                            d="M26.401 29a2.477 2.477 0 1 0-.2 0zm-19.65-2.68a2.68 2.68 0 1 0 5.357 0 2.68 2.68 0 0 0-5.355 0zm18.66-5.634a1.185 1.185 0 0 0 1.084-.709L31.9 7.565a1.191 1.191 0 0 0-.526-1.513 1.178 1.178 0 0 0-.56-.142H14.401a1.183 1.183 0 1 0 0 2.365h14.6l-4.383 10.048H11.44L6.607.868A1.183 1.183 0 0 0 5.463 0H1.182a1.182 1.182 0 1 0 0 2.364h3.393l4.833 17.455a1.185 1.185 0 0 0 1.145.867z" />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg>
-                        <div class="purchase_counter">5</div>
-                    </a>
+                            </svg>
+                            <div class="purchase_counter">5</div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-        </header>
-        <main>
-
-            <section class="breadcrumbs">
-                <div class="breadcrumbs_wrapper wrap">
-                    <h2 class="page_title registration_page_title">registration</h2>
-                </div>
-            </section>
-
-
-            <section class="reg_block wrap">
-
-
-                <form action="#" class="reg_form">
-
-                    <fieldset class="reg_name_fields">
-                        <legend class="reg_fieldset_name">Your name</legend>
-                        <input type="text" class="form_field" minlength="2" maxlength="24" placeholder="First Name">
-                        <input type="text" class="form_field" minlength="2" maxlength="24" placeholder="Last Name">
-
-                    </fieldset>
-                    <fieldset class="gender_selector">
-                        <label><input type="radio" name="Gender">Male</label>
-                        <label><input type="radio" name="Gender">Female</label>
-
-                    </fieldset>
-                    <fieldset class="Login_details">
-                        <legend class="reg_fieldset_name">Login details</legend>
-                        <input type="email" class="form_field" placeholder="Email">
-                        <input type="password" class="form_field" name="Password" id="pass" minlength="8"
-                            placeholder="Password">
-                    </fieldset>
-
-                    <p class="reg_block_text">Please use 8 or more characters, with at least 1 number and a mixture of
-                        uppercase and lowercase letters</p>
-
-                    <button class="reg_submit_btn" type="submit">Join Now<svg class="arrow_right_icon"
-                            xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10">
-                            <g>
-                                <g>
-                                    <path
-                                        d="M11.538.208a.708.708 0 0 1 1.003 0l4.25 4.25a.708.708 0 0 1 0 1.003l-4.25 4.25a.71.71 0 0 1-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 0 1 0-1.003z" />
-                                </g>
-                                <g>
-                                    <path
-                                        d="M0 4.958a.708.708 0 0 1 .708-.708h14.875a.708.708 0 0 1 0 1.417H.708A.708.708 0 0 1 0 4.958z" />
-                                </g>
-                            </g>
-                        </svg></button>
-
-                </form>
-
-
-
-
-
-
-
-
-                <aside class="reg_perks_info">
-
-                    <span class="reg_perks_title">LOYALTY HAS ITS PERKS</span>
-                    <p class="reg_perks_text">Get in on the loyalty program where you can earn points and unlock serious
-                        perks. Starting with these as soon as you join:</p>
-                    <ul class="reg_perks_list">
-                        <li>15% off welcome offer</li>
-                        <li>Free shipping, returns and exchanges on all orders</li>
-                        <li>$10 off a purchase on your birthday</li>
-                        <li>Early access to products</li>
-                        <li>Exclusive offers & rewards</li>
-                    </ul>
-
-                </aside>
-
-            </section>
-
-
-        </main>
-
-
-        <aside class="subscription_section ">
-            <div class="subscription_wrapper wrap">
-                <section class="subscription_info">
-                    <img class="subscribe_photo" src="img/subscribe_photo.png" alt="Customer Photo">
-                    <h3 class="customer_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
-                            class="customer_text_second_line">a
-                            pulvinar purus condimentum“</span></h3>
+            </header>
+            <main>
+                <section class="breadcrumbs">
+                    <div class="breadcrumbs_wrapper wrap">
+                        <h2 class="page_title registration_page_title">registration</h2>
+                    </div>
                 </section>
 
-                <section class="subscription_form">
-                    <h2 class="subscription_text">subscribe<br><span class="subscription_text_second_line">FOR OUR
-                            NEWLETTER
-                            AND PROMOTION</span></h2>
+                <section class="reg_block wrap">
+                    <form action="#" class="reg_form">
+                        <fieldset class="reg_name_fields">
+                            <legend class="reg_fieldset_name">Your name</legend>
+                            <input type="text" class="form_field" minlength="2" maxlength="24" placeholder="First Name" />
+                            <input type="text" class="form_field" minlength="2" maxlength="24" placeholder="Last Name" />
+                        </fieldset>
+                        <fieldset class="gender_selector">
+                            <label>
+                                <input type="radio" name="Gender" />
+                                Male
+                            </label>
+                            <label>
+                                <input type="radio" name="Gender" />
+                                Female
+                            </label>
+                        </fieldset>
+                        <fieldset class="Login_details">
+                            <legend class="reg_fieldset_name">Login details</legend>
+                            <input type="email" class="form_field" placeholder="Email" />
+                            <input type="password" class="form_field" name="Password" id="pass" minlength="8" placeholder="Password" />
+                        </fieldset>
 
-                    <form class="email_form" action="#">
-                        <input class="input_email" type="email" placeholder="Enter Your Email"><input
-                            class="input_submit_btn" type="submit" value=Subscribe>
+                        <p class="reg_block_text">
+                            Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+                        </p>
+
+                        <button class="reg_submit_btn" type="submit">
+                            Join Now
+                            <svg class="arrow_right_icon" xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M11.538.208a.708.708 0 0 1 1.003 0l4.25 4.25a.708.708 0 0 1 0 1.003l-4.25 4.25a.71.71 0 0 1-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 0 1 0-1.003z" />
+                                    </g>
+                                    <g>
+                                        <path d="M0 4.958a.708.708 0 0 1 .708-.708h14.875a.708.708 0 0 1 0 1.417H.708A.708.708 0 0 1 0 4.958z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
                     </form>
 
+                    <aside class="reg_perks_info">
+                        <span class="reg_perks_title">LOYALTY HAS ITS PERKS</span>
+                        <p class="reg_perks_text">
+                            Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                        </p>
+                        <ul class="reg_perks_list">
+                            <li>15% off welcome offer</li>
+                            <li>Free shipping, returns and exchanges on all orders</li>
+                            <li>$10 off a purchase on your birthday</li>
+                            <li>Early access to products</li>
+                            <li>Exclusive offers & rewards</li>
+                        </ul>
+                    </aside>
                 </section>
-            </div>
-        </aside>
-    </div>
+            </main>
 
-    <footer>
-        <div class="footer_wrapper wrap">
-            <span class="copyright"> &copy; 2021 Brand All Rights Reserved.</span>
-            <div class="social">
-                <a class="social_icon" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="social_icon" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="social_icon" href="#"><i class="fab fa-pinterest-p"></i></a>
-                <a class="social_icon" href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+            <aside class="subscription_section">
+                <div class="subscription_wrapper wrap">
+                    <section class="subscription_info">
+                        <img class="subscribe_photo" src="img/subscribe_photo.png" alt="Customer Photo" />
+                        <h3 class="customer_text">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            <span class="customer_text_second_line">a pulvinar purus condimentum“</span>
+                        </h3>
+                    </section>
+
+                    <section class="subscription_form">
+                        <h2 class="subscription_text">
+                            subscribe
+                            <br />
+                            <span class="subscription_text_second_line">FOR OUR NEWLETTER AND PROMOTION</span>
+                        </h2>
+
+                        <form class="email_form" action="#">
+                            <input class="input_email" type="email" placeholder="Enter Your Email" />
+                            <input class="input_submit_btn" type="submit" value="Subscribe" />
+                        </form>
+                    </section>
+                </div>
+            </aside>
         </div>
-    </footer>
 
-
-
-
-
-</body>
-
+        <footer>
+            <div class="footer_wrapper wrap">
+                <span class="copyright">&copy; 2021 Brand All Rights Reserved.</span>
+                <div class="social">
+                    <a class="social_icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social_icon" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="social_icon" href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a class="social_icon" href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

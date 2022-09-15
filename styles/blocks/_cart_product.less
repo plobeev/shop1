@@ -1,3 +1,8 @@
+@import "_mixins_vars.less";
+
+// //////////////////////////////////////////
+
+
 .product_slider{
     max-width: 1600px;
     margin: 0 auto;
@@ -65,8 +70,7 @@
 }
 
 .product_description_title{  
-    font-size: 14px;
-    line-height: 17px;
+    .font14_17();
     color: #F16D7F;
     font-weight: inherit;
 }
@@ -77,8 +81,7 @@
 }
 .product_description_text{
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    .font14_17();
     text-align: center;
     color: #5E5E5E;
     display: block;
@@ -116,8 +119,7 @@
     width: 212px ;
     height: 48px;
     margin-top: 18px;
-    font-size: 16px;
-    line-height: 19px;
+    .font16_19();
     color: #F26376;
     background-color: #FFFFFF;
     border: solid #FF6A6A 1px;
@@ -218,9 +220,28 @@
     cursor: pointer;
     .close_icon{
         fill: #575757;
+        &:hover{
+            transform: scale(1.6);
+            transition-duration: 0.5s; 
+        }
+        
+    }
+    &:hover{
+        
+        animation: rotation 2s infinite linear;
+    }
+    &:focus{
+        outline: none;
     }
 }
-
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -242,8 +263,7 @@ input[type=number] {
 .cart_shopping_button1, .cart_shopping_button2{
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    .font14_17();
     color: #575757;
     height: 50px;
     border-style: none;
@@ -274,8 +294,7 @@ input[type=number] {
     text-transform: uppercase;
     .cart_form_title{
         font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
+        .font16_19();
         color: #222222;
     }
 }
@@ -336,13 +355,11 @@ input[type=number] {
 }
 .cart_grand_total{
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    .font16_19();
     color: #222222;
     &_price{
         font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
+        .font16_19();
         color: #F16D7F;
         }
 }
@@ -351,8 +368,7 @@ input[type=number] {
     width: 100%;
     background-color: #F16D7F;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    .font16_19();
     color:#ffffff;
     text-transform: uppercase;
     border-style: none;
@@ -457,15 +473,13 @@ input[type=number] {
         width: 358px;
     }
     .cart_item_name{
-        font-size: 16px;
-        line-height: 19px;
+        .font16_19();
     }
     .cart_item_details {
         height: 86px;
     }
     .cart_item_property{
-        font-size: 14px;
-        line-height: 17px;
+        .font14_17();
     }
     .cart_item_description {
         padding: 13px 0 28px 17px;

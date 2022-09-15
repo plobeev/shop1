@@ -315,7 +315,7 @@ header .wrap_header {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-  padding: 104px 0 ;
+  padding: 104px 0;
 }
 .features_section .feature {
   height: 134px;
@@ -328,7 +328,6 @@ header .wrap_header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .features_section .feature:hover {
   transform: scale(1.2);
@@ -395,7 +394,6 @@ header .wrap_header {
   max-width: 356px;
   text-align: center;
   margin: 0 auto;
-  display: flex;
 }
 .input_submit_btn,
 .input_email {
@@ -421,7 +419,7 @@ header .wrap_header {
 }
 .input_submit_btn {
   width: 100px;
-  text-align: center ;
+  text-align: center;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;

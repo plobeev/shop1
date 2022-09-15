@@ -1,3 +1,6 @@
+@import "_mixins_vars.less";
+
+// // //////////////////////////////////////////
 .reg_block{
     display: flex;
     align-items: flex-start;
@@ -13,8 +16,7 @@
     fieldset{
         border: none;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
+        .font16_19();
         color: #222222;
         padding: 0;
     }
@@ -42,8 +44,7 @@
     background-color: #F16D7F;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
+    .font14_17();
     border-style: none;
     cursor: pointer;    
     .arrow_right_icon{
@@ -124,8 +125,7 @@
 .sorting_type{
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    .font14_17();
     color: #6F6E6E;
     text-transform: uppercase;
     margin-right: 28px;    
@@ -190,8 +190,7 @@
     }
     .reg_perks_info{
         margin-bottom: 96px;
-        font-size: 16px;
-        line-height: 19px;
+        .font16_19();
         padding-right: 0px;
     }
     .reg_perks_title {
